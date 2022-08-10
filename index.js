@@ -12,9 +12,10 @@ app.on("ready", () => {
     })
 
     window.setMenuBarVisibility(false)
+    window.webContents.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36")
     window.loadURL("https://music.youtube.com")
 
-    window.on("ready-to-show", () => {
+    window.webContents.on("did-finish-load", () => {
         window.show()
     })
 })
