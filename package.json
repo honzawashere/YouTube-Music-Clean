@@ -1,6 +1,6 @@
 {
   "name": "youtube-music",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "YouTube Music App without any modifications.",
   "main": "index.js",
   "repository": {
